@@ -16,6 +16,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 let vid= [];
 
+app.get("video list",(req, res)=>{
+    res.send(`welcom to the main page.`);
+});
+
 app.get("/home",(req, res)=>{
     res.send(`this is home.`);
 });

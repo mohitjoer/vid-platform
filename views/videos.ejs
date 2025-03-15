@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+<body>
+    <h1>videos</h1>
+    <ul>
+        <% for (let video of vid){ %>
+            <div class="lable">
+                <img src="/global/vid-platform/public/<%video.img%>" alt="video thumbnail">
+                <br>
+                <h3> <%= video.title %> </h3>
+                <a href=<%=video.link %>>watch</a>
+                <br>
+            </div>
+        <%}%>
+    </ul>
+    
+</body>
+</html>

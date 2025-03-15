@@ -13,15 +13,23 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));    
+  
 
-let vid= [];
+let vid= [
+    {
+        id:uuid(),
+        title:"how to add animated border",
+        img: "" ,
+        link: "https://youtu.be/xhDTJkpmp7s"
+    }
+];
 
-app.get("video list",(req, res)=>{
+app.get("/",(req, res)=>{
     res.send(`welcom to the main page.`);
 });
 
-app.get("/home",(req, res)=>{
-    res.send(`this is home.`);
+app.get("/videos",(req, res)=>{
+    res.render("videos.ejs", {vid});
 });
 
 app.listen(port, () => {    

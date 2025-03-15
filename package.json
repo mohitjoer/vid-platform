@@ -1,0 +1,23 @@
+{
+  "name": "vid-platform",
+  "version": "1.0.0",
+  "description": "a platform for my youtube channel ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitjoer/vid-platform.git"
+  },
+  "author": "mohit joe .r",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohitjoer/vid-platform/issues"
+  },
+  "homepage": "https://github.com/mohitjoer/vid-platform#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
